@@ -1,0 +1,70 @@
+body {
+    background-color: whitesmoke;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    height: 200px;
+    width: auto;
+}
+
+.main-menu {
+    display: flex;
+    background-color: rgb(255, 214, 171);
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu li {
+    margin-right: 130px;
+    margin-left: 130px;
+    padding: 10px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.jumbotron {
+    display: flex;
+    justify-content: center
+}
+
+.main-heading {
+    text-align: center;
+    font-size: 70px;
+}
+
+.second-heading {
+    text-align: center;
+    font-size: 50px;
+}
+
+.inquire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    height: 400px;
+}
+
+.inquire a {
+    text-decoration: none;
+    background-color: whitesmoke;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 50px;
+    border: 1px solid black;
+}
