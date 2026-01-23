@@ -94,4 +94,23 @@ body {
 .get-to-know {
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 223, 197);
+    height: 600px;
+}
+
+.get-to-know-info {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+}
+
+.get-to-know-info p {
+    width: 50%;
+}
+
+.get-to-know img {
+    height: 500px;
+    border: 20px solid white;
 }
