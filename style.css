@@ -153,3 +153,10 @@ body {
     font-size: 25px;
     font-weight: 500;
 }
+
+.contact-info img {
+    height: 500px;
+    width: auto;
+    border: 20px solid white;
+    flex-shrink: 0;
+}
