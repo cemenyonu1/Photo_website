@@ -95,22 +95,60 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(247, 223, 197);
-    height: 600px;
-}
-
-.get-to-know-info {
-    display: flex;
-    align-items: center;
     gap: 50px;
-    max-width: 1200px;
-}
-
-.get-to-know-info p {
-    width: 50%;
+    background-color: rgb(252, 235, 218);
+    height: 600px;
 }
 
 .get-to-know img {
     height: 500px;
+    width: auto;
     border: 20px solid white;
+    flex-shrink: 0;
+}
+
+.get-to-know p {
+    color: gray;
+    text-align: left;
+}
+
+.get-to-know h1 {
+    color: gray;
+    margin-bottom: -30px;
+}
+
+.get-to-know h2 {
+    color: gray;
+    font-family: 'Snell Roundhand', cursive;
+    font-size: xx-large;
+}
+
+.aboutus_bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+}
+
+.second-list {
+    display: flex;
+    background-color: rgb(255, 214, 171);
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.second-list li {
+    margin-right: 100px;
+    margin-left: 100px;
+    padding: 10px;
+}
+
+.second-list a {
+    text-decoration: none;
+    color: gray;
+    font-size: 25px;
+    font-weight: 500;
 }
