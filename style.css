@@ -164,6 +164,7 @@ body {
 .us {
     background-color: rgb(252, 235, 218);
     margin-top: 2px;
+    margin-bottom: 2px;
     display: flex;
     flex-direction: column;
 }
