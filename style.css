@@ -1,222 +1,742 @@
-body {
-    background-color: rgb(255, 255, 255);
+@media (max-width: 767px) {
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo img {
+        height: 200px;
+        width: auto;
+        margin-bottom: -50px;
+        margin-top: -30px;
+    }
+
+    .nav-toggle-label span {
+        display: block;
+        width: 28px;
+        height: 3px;
+        background: gray;
+        margin: 6px 0;
+    }
+
+    .nav-toggle-label {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        background-color: rgb(255, 214, 171);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-toggle:checked~.main-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-menu {
+        display: none;
+        background-color: rgb(255, 214, 171);
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .main-menu li {
+        margin-right: 100px;
+        margin-left: 100px;
+        padding: 10px;
+    }
+
+    .main-menu a {
+        text-decoration: none;
+        color: gray;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .jumbotron {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        height: 500px;
+    }
+
+    #one {
+        display: none;
+        height: 400px;
+        margin-right: 10px;
+        margin-top: 30px;
+    }
+
+    #two {
+        height: 400px;
+        border: 10px solid white;
+    }
+
+    #three {
+        display: none;
+        height: 400px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+
+    .main-heading {
+        text-align: center;
+        font-size: 70px;
+        font-family: Didot, serif;
+        color: gray;
+    }
+
+    .second-heading {
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Snell Roundhand', cursive;
+        color: rgb(255, 214, 171);
+        margin-top: -60px;
+    }
+
+    .inquire {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(images/wedding.jpg);
+        height: 400px;
+    }
+
+    .inquire a {
+        text-decoration: none;
+        background-color: gray;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 50px;
+        font-family: 'Snell Roundhand', cursive;
+        color: white;
+    }
+
+    .get-to-know {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        background-color: rgb(252, 235, 218);
+        height: 1200px;
+        flex-direction: column;
+    }
+
+    .get-to-know img {
+        height: 500px;
+        width: auto;
+        border: 20px solid white;
+        flex-shrink: 0;
+        order: 1;
+    }
+
+    .get-to-know p {
+        color: gray;
+        text-align: left;
+    }
+
+    .get-to-know h1 {
+        color: gray;
+        margin-bottom: -30px;
+    }
+
+    .get-to-know h2 {
+        color: gray;
+        font-family: 'Snell Roundhand', cursive;
+        font-size: xx-large;
+
+    }
+
+    .get-to-know a {
+        font-family: 'Snell Roundhand', cursive;
+        text-decoration: none;
+        color: gray;
+        font-size: 32px;
+    }
+
+    .aboutus_bio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 450px;
+    }
+
+    .second-list {
+        display: none;
+        background-color: rgb(255, 214, 171);
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .second-list li {
+        margin-right: 100px;
+        margin-left: 100px;
+        padding: 10px;
+    }
+
+    .second-list a {
+        text-decoration: none;
+        color: gray;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .contact-info img {
+        height: 500px;
+        width: auto;
+        border: 20px solid white;
+        flex-shrink: 0;
+    }
+
+    .us {
+        background-color: rgb(252, 235, 218);
+        margin-top: 2px;
+        margin-bottom: 2px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .us h2 {
+        font-family: 'Snell Roundhand', cursive;
+        font-size: 64px;
+        color: gray;
+    }
+
+    .us h3 {
+        color: gray;
+    }
+
+    .cory {
+        display: flex;
+        height: 600px;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .cory .cory-info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 500px;
+    }
+
+    .cory img {
+        height: 500px;
+        border: 10px solid white;
+    }
+
+    .kayla {
+        display: flex;
+        height: 600px;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .kayla .kayla-info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 500px;
+    }
+
+    .kayla img {
+        height: 500px;
+        border: 10px solid white;
+    }
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
+@media (min-width: 768px) {
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo img {
+        height: 200px;
+        width: auto;
+        margin-bottom: -50px;
+        margin-top: -30px;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    .main-menu {
+        display: flex;
+        background-color: rgb(255, 214, 171);
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .main-menu li {
+        margin-right: 100px;
+        margin-left: 100px;
+        padding: 10px;
+    }
+
+    .main-menu a {
+        text-decoration: none;
+        color: gray;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .jumbotron {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        height: 500px;
+    }
+
+    #one {
+        height: 400px;
+        margin-right: 10px;
+        margin-top: 30px;
+    }
+
+    #three {
+        height: 400px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+
+    .main-heading {
+        text-align: center;
+        font-size: 70px;
+        font-family: Didot, serif;
+        color: gray;
+    }
+
+    .second-heading {
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Snell Roundhand', cursive;
+        color: rgb(255, 214, 171);
+        margin-top: -60px;
+    }
+
+    .inquire {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(images/wedding.jpg);
+        height: 600px;
+    }
+
+    .inquire a {
+        text-decoration: none;
+        background-color: rgb(255, 255, 255);
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 50px;
+        border: 1px solid black;
+        font-family: 'Snell Roundhand', cursive;
+        color: gray;
+    }
+
+    .get-to-know {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        background-color: rgb(252, 235, 218);
+        height: 600px;
+    }
+
+    .get-to-know img {
+        height: 500px;
+        width: auto;
+        border: 20px solid white;
+        flex-shrink: 0;
+    }
+
+    .get-to-know p {
+        color: gray;
+        text-align: left;
+    }
+
+    .get-to-know h1 {
+        color: gray;
+        margin-bottom: -30px;
+    }
+
+    .get-to-know h2 {
+        color: gray;
+        font-family: 'Snell Roundhand', cursive;
+        font-size: xx-large;
+    }
+
+    .get-to-know a {
+        font-family: 'Snell Roundhand', cursive;
+        text-decoration: none;
+        color: gray;
+        font-size: 32px;
+    }
+
+    .aboutus_bio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 450px;
+    }
+
+    .second-list {
+        display: flex;
+        background-color: rgb(255, 214, 171);
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .second-list li {
+        margin-right: 100px;
+        margin-left: 100px;
+        padding: 10px;
+    }
+
+    .second-list a {
+        text-decoration: none;
+        color: gray;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .contact-info img {
+        height: 500px;
+        width: auto;
+        border: 20px solid white;
+        flex-shrink: 0;
+    }
+
+    .us {
+        background-color: rgb(252, 235, 218);
+        margin-top: 2px;
+        margin-bottom: 2px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .us h2 {
+        font-family: 'Snell Roundhand', cursive;
+        font-size: 64px;
+        color: gray;
+    }
+
+    .us h3 {
+        color: gray;
+    }
+
+    .cory {
+        display: flex;
+        height: 600px;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .cory .cory-info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 500px;
+    }
+
+    .cory img {
+        height: 500px;
+        border: 10px solid white;
+    }
+
+    .kayla {
+        display: flex;
+        height: 600px;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .kayla .kayla-info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 500px;
+    }
+
+    .kayla img {
+        height: 500px;
+        border: 10px solid white;
+    }
 }
 
-.logo img {
-    height: 200px;
-    width: auto;
-    margin-bottom: -50px;
-    margin-top: -30px;
-}
+@media (min-width: 1200px) {
+    body {
+        background-color: rgb(255, 255, 255);
+    }
 
-.main-menu {
-    display: flex;
-    background-color: rgb(255, 214, 171);
-    justify-content: center;
-    width: 100%;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
 
-.main-menu li {
-    margin-right: 100px;
-    margin-left: 100px;
-    padding: 10px;
-}
+    .logo img {
+        height: 200px;
+        width: auto;
+        margin-bottom: -50px;
+        margin-top: -30px;
+    }
 
-.main-menu a {
-    text-decoration: none;
-    color: gray;
-    font-size: 25px;
-    font-weight: 500;
-}
+    .nav-toggle {
+        display: none;
+    }
 
-.jumbotron {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    height: 500px;
-}
+    .nav-toggle-label {
+        display: none;
+    }
 
-#one {
-    height: 400px;
-    margin-right: 10px;
-    margin-top: 30px;
-}
+    .main-menu {
+        display: flex;
+        background-color: rgb(255, 214, 171);
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 
-#three {
-    height: 400px;
-    margin-left: 10px;
-    margin-top: 30px;
-}
+    .main-menu li {
+        margin-right: 100px;
+        margin-left: 100px;
+        padding: 10px;
+    }
 
-.main-heading {
-    text-align: center;
-    font-size: 70px;
-    font-family: Didot, serif;
-    color: gray;
-}
+    .main-menu a {
+        text-decoration: none;
+        color: gray;
+        font-size: 25px;
+        font-weight: 500;
+    }
 
-.second-heading {
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Snell Roundhand', cursive;
-    color: rgb(255, 214, 171);
-    margin-top: -60px;
-}
+    .jumbotron {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        height: 500px;
+    }
 
-.inquire {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(images/wedding.jpg);
-    height: 600px;
-}
+    #one {
+        height: 400px;
+        margin-right: 10px;
+        margin-top: 30px;
+    }
 
-.inquire a {
-    text-decoration: none;
-    background-color: rgb(255, 255, 255);
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-size: 50px;
-    border: 1px solid black;
-    font-family: 'Snell Roundhand', cursive;
-    color: gray;
-}
+    #three {
+        height: 400px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
 
-.get-to-know {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    background-color: rgb(252, 235, 218);
-    height: 600px;
-}
+    .main-heading {
+        text-align: center;
+        font-size: 70px;
+        font-family: Didot, serif;
+        color: gray;
+    }
 
-.get-to-know img {
-    height: 500px;
-    width: auto;
-    border: 20px solid white;
-    flex-shrink: 0;
-}
+    .second-heading {
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Snell Roundhand', cursive;
+        color: rgb(255, 214, 171);
+        margin-top: -60px;
+    }
 
-.get-to-know p {
-    color: gray;
-    text-align: left;
-}
+    .inquire {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(images/wedding.jpg);
+        height: 600px;
+    }
 
-.get-to-know h1 {
-    color: gray;
-    margin-bottom: -30px;
-}
+    .inquire a {
+        text-decoration: none;
+        background-color: rgb(255, 255, 255);
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 50px;
+        border: 1px solid black;
+        font-family: 'Snell Roundhand', cursive;
+        color: gray;
+    }
 
-.get-to-know h2 {
-    color: gray;
-    font-family: 'Snell Roundhand', cursive;
-    font-size: xx-large;
-}
+    .get-to-know {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        background-color: rgb(252, 235, 218);
+        height: 600px;
+    }
 
-.aboutus_bio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 450px;
-}
+    .get-to-know img {
+        height: 500px;
+        width: auto;
+        border: 20px solid white;
+        flex-shrink: 0;
+    }
 
-.second-list {
-    display: flex;
-    background-color: rgb(255, 214, 171);
-    justify-content: center;
-    width: 100%;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+    .get-to-know p {
+        color: gray;
+        text-align: left;
+    }
 
-.second-list li {
-    margin-right: 100px;
-    margin-left: 100px;
-    padding: 10px;
-}
+    .get-to-know h1 {
+        color: gray;
+        margin-bottom: -30px;
+    }
 
-.second-list a {
-    text-decoration: none;
-    color: gray;
-    font-size: 25px;
-    font-weight: 500;
-}
+    .get-to-know h2 {
+        color: gray;
+        font-family: 'Snell Roundhand', cursive;
+        font-size: xx-large;
+    }
 
-.contact-info img {
-    height: 500px;
-    width: auto;
-    border: 20px solid white;
-    flex-shrink: 0;
-}
+    .get-to-know a {
+        font-family: 'Snell Roundhand', cursive;
+        text-decoration: none;
+        color: gray;
+        font-size: 32px;
+    }
 
-.us {
-    background-color: rgb(252, 235, 218);
-    margin-top: 2px;
-    margin-bottom: 2px;
-    display: flex;
-    flex-direction: column;
-}
+    .aboutus_bio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 450px;
+    }
 
-.us h2 {
-    font-family: 'Snell Roundhand', cursive;
-    font-size: 64px;
-    color: gray;
-}
+    .second-list {
+        display: flex;
+        background-color: rgb(255, 214, 171);
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 
-.us h3 {
-    color: gray;
-}
+    .second-list li {
+        margin-right: 100px;
+        margin-left: 100px;
+        padding: 10px;
+    }
 
-.cory {
-    display: flex;
-    height: 600px;
-    width: auto;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-}
+    .second-list a {
+        text-decoration: none;
+        color: gray;
+        font-size: 25px;
+        font-weight: 500;
+    }
 
-.cory .cory-info {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    max-width: 500px;
-}
+    .contact-info img {
+        height: 500px;
+        width: auto;
+        border: 20px solid white;
+        flex-shrink: 0;
+    }
 
-.cory img {
-    height: 500px;
-    border: 10px solid white;
-}
+    .us {
+        background-color: rgb(252, 235, 218);
+        margin-top: 2px;
+        margin-bottom: 2px;
+        display: flex;
+        flex-direction: column;
+    }
 
-.kayla {
-    display: flex;
-    height: 600px;
-    width: auto;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-}
+    .us h2 {
+        font-family: 'Snell Roundhand', cursive;
+        font-size: 64px;
+        color: gray;
+    }
 
-.kayla .kayla-info {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    max-width: 500px;
-}
+    .us h3 {
+        color: gray;
+    }
 
-.kayla img {
-    height: 500px;
-    border: 10px solid white;
+    .cory {
+        display: flex;
+        height: 600px;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .cory .cory-info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 500px;
+    }
+
+    .cory img {
+        height: 500px;
+        border: 10px solid white;
+    }
+
+    .kayla {
+        display: flex;
+        height: 600px;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .kayla .kayla-info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 500px;
+    }
+
+    .kayla img {
+        height: 500px;
+        border: 10px solid white;
+    }
 }
