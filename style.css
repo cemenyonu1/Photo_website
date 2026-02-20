@@ -160,3 +160,62 @@ body {
     border: 20px solid white;
     flex-shrink: 0;
 }
+
+.us {
+    background-color: rgb(252, 235, 218);
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.us h2 {
+    font-family: 'Snell Roundhand', cursive;
+    font-size: 64px;
+    color: gray;
+}
+
+.us h3 {
+    color: gray;
+}
+
+.cory {
+    display: flex;
+    height: 600px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.cory .cory-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.cory img {
+    height: 500px;
+    border: 10px solid white;
+}
+
+.kayla {
+    display: flex;
+    height: 600px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.kayla .kayla-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.kayla img {
+    height: 500px;
+    border: 10px solid white;
+}
