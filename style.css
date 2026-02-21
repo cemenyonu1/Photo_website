@@ -231,6 +231,8 @@
         justify-content: center;
         gap: 50px;
         margin-top: 300px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .cory .cory-info {
@@ -255,6 +257,8 @@
         gap: 50px;
         margin-top: 500px;
         padding-bottom: 300px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .kayla .kayla-info {
