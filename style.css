@@ -283,10 +283,13 @@
     .contact-us {
         display: flex;
         justify-content: center;
+        align-items: center;
         gap: 50px;
-        margin-top: 100px;
-        margin-bottom: 200px;
+        margin-top: 2px;
+        padding-top: 100px;
+        padding-bottom: 200px;
         flex-direction: column;
+        background-color: rgb(254, 244, 234);
     }
 
     .contact-img {
@@ -305,7 +308,7 @@
     }
 
     .contact-us form {
-        width: 500px;
+        width: 90%;
         flex-direction: column;
         display: flex;
         gap: 10px;
