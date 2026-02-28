@@ -551,7 +551,8 @@
     }
 
     .cory img {
-        height: 500px;
+
+        width: 50%;
         border: 10px solid white;
     }
 
@@ -572,7 +573,8 @@
     }
 
     .kayla img {
-        height: 400px;
+
+        width: 50%;
         border: 10px solid white;
     }
 
